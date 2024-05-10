@@ -2,11 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Sign up</title>
 </head>
 <body>
-    <h2>Login</h2>
-    <form th:action="@{/login}" method="post">
+    <h2>Sign up</h2>
+    <form th:action="@{/signup}" method="post">
 		 <fieldset>
         <div>
             <label for="username">User:</label>
@@ -17,7 +17,7 @@
             <input type="password" id="password" name="password" />
         </div>
         <div>
-            <input type="submit" value="Log in" />
+            <input type="submit" value="Sign up" />
         </div>
         <p th:if="${param.error}">
             Invalid username or password.
@@ -27,6 +27,5 @@
         </p>
         </fieldset>
     </form>
-<a th:href="@{/signup}">Sign up</a>
 </body>
 </html>
